@@ -22,12 +22,15 @@ header {
     color: #f5f5f5;
     width: 100%;
     text-align: center;
-    padding: 40px;
     background-color: #2c3e50;
 }
 
+header img {
+    width: 20%;
+}
+
 header h1 {
-    color: #e74c3c ;
+    color: #f5f5f5;
 }
 header h3 {
     font-style: italic;
@@ -36,7 +39,7 @@ header h3 {
 
 header p {
     font-weight:lighter;
-    margin-top: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 .basic-info {
