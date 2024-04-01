@@ -20,8 +20,8 @@
     <div class="basic-info">
         Basic Information
     </div>
+    
     <form action="#" method="get" class="info-row">
-
         <!--Name and Email-->
         <div class="form-row">
             <label for="name">Name: </label>
@@ -40,31 +40,37 @@
         </div>
 
         <!--Dropdowns-->
-        <div class="dropdown">
-            <button class="dropdown-toggle">
-                <span>Types of Cuisine</span>
-                <i class="fa-solid fa-caret-right"></i>
-            </button>
-
-            <ul class="types">
-                <li class="types-item"><a href="#">Italian</a></li>
-                <li class="types-item"><a href="#">Japanese</a></li>
-                <li class="types-item"><a href="#">French</a></li>
-            </ul>
+        <div class="cuisine">
+            <b>Types of Cuisine</b>
+            <div class="dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                  <span>Filipino</span>
+                </button>
+              
+                <ul class="types">
+                  <li class="types-item"><a href="#">Filipino</a></li>
+                  <li class="types-item"><a href="#">Italian</a></li>
+                  <li class="types-item"><a href="#">Japanese</a></li>
+                  <li class="types-item"><a href="#">French</a></li>
+                </ul>
+              </div>
         </div>
 
-        <div class="dropdown">
-            <button class="dropdown-toggle">
-                <span>Mode of Payment</span>
-            </button>
-
-            <ul class="types">
-                <li class="types-item"><a href="#">Gcash</a></li>
-                <li class="types-item"><a href="#">Maya</a></li>
-                <li class="types-item"><a href="#">Paypal</a></li>
-            </ul>
+        <div>
+            <b>Mode of Payment</b>
+            <div class="dropdown">
+                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                  <span>Gcash</span>
+                </button>
+              
+                <ul class="types">
+                  <li class="types-item"><a href="#">Gcash</a></li>
+                  <li class="types-item"><a href="#">Maya</a></li>
+                  <li class="types-item"><a href="#">Paypal</a></li>
+                </ul>
+              </div>
         </div>
-
+          
         <!--Radio btn-->
         <div class="service-form-row">
             <legend>Food Service</legend>
@@ -82,7 +88,7 @@
         <!--Textarea for instructions-->
         <div class="form-row-instruction">
             <label for="instruction">Comments/Instructions</label>
-            <textarea name="instruction" id="instruction" cols="25" rows="10"></textarea>
+            <textarea name="instruction" id="instruction" cols="25" rows="10" placeholder="Enter your instructions"></textarea>
         </div>
 
         <!--Buttons-->
@@ -90,7 +96,6 @@
             <button class="order" type="submit">Place Order</button>
             <button class="cancel" type="cancel">Cancel</button>
         </div>
-
     </form>
 
     <script src="index.js"></script>
