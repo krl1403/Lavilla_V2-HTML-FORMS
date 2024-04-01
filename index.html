@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--Put image here for LOGO-->
+
+        <h1>KEN'S RESTAURANT</h1>
+        <h3>Experience Culinary Delights at Ken's Restaurant</h3>
+        <p>Welcome to Ken's Restaurant! <br>
+            Please take a moment to provide us with some basic information so we can better serve you. 
+        </p>
+    </header>
+
+    <div class="basic-info">
+        Basic Information
+    </div>
+    <form action="#" method="get" class="info-row">
+
+        <!--Name and Email-->
+        <div class="form-row">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <!--Age input-->
+        <div class="form-row">
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" min="0" max="150">
+        </div>
+
+        <!--Dropdowns-->
+        <div class="dropdown">
+            <button class="dropdown-toggle">
+                <span>Types of Cuisine</span>
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+
+            <ul class="types">
+                <li class="types-item"><a href="#">Italian</a></li>
+                <li class="types-item"><a href="#">Japanese</a></li>
+                <li class="types-item"><a href="#">French</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-toggle">
+                <span>Mode of Payment</span>
+            </button>
+
+            <ul class="types">
+                <li class="types-item"><a href="#">Gcash</a></li>
+                <li class="types-item"><a href="#">Maya</a></li>
+                <li class="types-item"><a href="#">Paypal</a></li>
+            </ul>
+        </div>
+
+        <!--Radio btn-->
+        <div class="service-form-row">
+            <legend>Food Service</legend>
+            <div>
+                <input type="radio" name="service" value="Dine-in" id="dine-in">
+                <label for="dine-in">Dine-in</label>
+            </div>
+
+            <div>
+                <input type="radio" name="service" value="Take-out" id="take-out">
+                <label for="take-out">Take-out</label>
+            </div>
+        </div>
+
+        <!--Textarea for instructions-->
+        <div class="form-row-instruction">
+            <label for="instruction">Comments/Instructions</label>
+            <textarea name="instruction" id="instruction" cols="25" rows="10"></textarea>
+        </div>
+
+        <!--Buttons-->
+        <div class="btn-group">
+            <button class="order" type="submit">Place Order</button>
+            <button class="cancel" type="cancel">Cancel</button>
+        </div>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
