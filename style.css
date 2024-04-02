@@ -33,14 +33,6 @@ header img {
 header h1 {
     color: #f5f5f5;
 }
-header h3 {
-    font-style: italic;
-    color: #27ae60 ;
-}
-
-.brand {
-    color: #e74c3c;
-}
 
 header p {
     font-weight:lighter;
@@ -176,7 +168,7 @@ textarea {
     padding: 10px;
     border: 1px solid #2c3e50;
     border-radius: 3px;
-    resize: vertical;
+    resize: none;
 }
 
 /* Buttons */
