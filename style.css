@@ -62,6 +62,12 @@ header p {
 }
 
 /* Forms */
+.info-form {
+    background-color: #b8c1cc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .form-row {
     display: block;
     margin-bottom: 10px;
@@ -112,10 +118,6 @@ input[type="number"] {
     cursor: pointer;
 }
 
-.dropdown-toggle span {
-    display: inline-block;
-}
-
 .cuisine b {
     margin-right: 8px;
 }
@@ -129,8 +131,6 @@ input[type="number"] {
 .types {
     position: absolute;
     top: 100%;
-    left: 0;
-    text-align: center;
     background-color: #f5f5f5;
     list-style: none;
     display: none;
@@ -181,13 +181,15 @@ textarea {
 
 /* Buttons */
 .btn-group {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0px 0;
     display: flex;
     justify-content: flex-end;
 }
 
 .btn-group button {
     border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(44, 62, 80, 0.4);
     padding: 10px 15px 10px 15px;
 }
 
