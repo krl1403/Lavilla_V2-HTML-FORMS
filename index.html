@@ -41,37 +41,56 @@
         </div>
 
         <!--Dropdowns-->
-        <div class="cuisine">
-            <b>Types of Cuisine</b>
-            <div class="dropdown">
-                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
-                  <span>Types</span>
+        <div class="dropdown-section">
+            <div id="cuisine-dropdown">
+                <button class="dropdown-toggle">
+                <span>Types of Cuisine</span>
+                <i class="fa-solid fa-caret-down"></i>
                 </button>
-              
-                <ul class="types">
-                  <li class="types-item"><a href="#">Filipino</a></li>
-                  <li class="types-item"><a href="#">Italian</a></li>
-                  <li class="types-item"><a href="#">Japanese</a></li>
-                  <li class="types-item"><a href="#">French</a></li>
+                <ul class="menu">
+                <li class="menu-item"><a href="#">Filipino</a></li>
+                <li class="menu-item"><a href="#">Italian</a></li>
+                <li class="menu-item"><a href="#">Japanese</a></li>
+                <li class="menu-item"><a href="#">French</a></li>
+                <li class="menu-item"><a href="#">Mexican</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Healthy Options</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Desserts</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Tiramisu Layer Cake</a></li>
+                    <li class="submenu-item"><a href="#">White Chocolate Raspberry Cheesecake</a></li>
+                    <li class="submenu-item"><a href="#">Brownie Sundae</a></li>
+                    <li class="submenu-item"><a href="#">Chocolate Lava Cake</a></li>
+                    </ul>
+                </li>
                 </ul>
-              </div>
+            </div>
+        
+            <div id="payment-dropdown">
+            <button class="dropdown-toggle">
+                <span>Mode of Payment</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Cash</a></li>
+                <li class="menu-item"><a href="#">CashG</a></li>
+                <li class="menu-item"><a href="#">Ayam</a></li>
+                <li class="menu-item"><a href="#">Palpay</a></li>
+            </ul>
+            </div>
         </div>
-
-        <div>
-            <b>Mode of Payment</b>
-            <div class="dropdown">
-                <button class="dropdown-toggle" onclick="toggleDropdown(this)">
-                  <span>Modes</span>
-                </button>
-              
-                <ul class="types">
-                  <li class="types-item"><a href="#">Gcash</a></li>
-                  <li class="types-item"><a href="#">Maya</a></li>
-                  <li class="types-item"><a href="#">Paypal</a></li>
-                </ul>
-              </div>
-        </div>
-          
+        
         <!--Radio btn-->
         <div class="service-form-row">
             <legend>Food Service</legend>

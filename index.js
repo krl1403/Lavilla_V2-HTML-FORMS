@@ -1,18 +1,21 @@
-function toggleDropdown(button) {
-  var types = button.nextElementSibling;
+// Dropdown togglers script
+document.addEventListener("click", (event) => {
+  const dropdownToggle = event.target.closest(".dropdown-toggle");
 
-  if (types.style.display === "block") 
-    types.style.display = "none";
-  else {
-    types.style.display = "block";
+  const dropdown = dropdownToggle.parentNode;
+  const menu = dropdown.querySelector(".menu");
 
-    var items = types.getElementsByClassName("types-item");
-
-    for (var i = 0; i < items.length; i++) {
-      items[i].addEventListener("click", function() {
-        types.style.display = "none";
-        button.querySelector("span").textContent = this.textContent;
-      });
+  // Close other open dropdowns if one dropdown is selected
+  const openMenus = document.querySelectorAll(".menu.open");
+  openMenus.forEach((openMenu) => {
+    if (openMenu !== menu) {
+      openMenu.classList.remove("open");
+      const openToggle = openMenu.parentNode.querySelector(".dropdown-toggle");
+      openToggle.classList.remove("open");
     }
-  }
-}
+  });
+
+  // Toggle the clicked dropdown
+  menu.classList.toggle("open");
+  dropdownToggle.classList.toggle("open");
+});
