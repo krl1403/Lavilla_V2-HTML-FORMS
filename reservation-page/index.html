@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--Image here for LOGO-->
+        <img src="img/logo.png" alt="">
+
+        <h1>Ken's Restaurant Reservation</h1>
+    </header>
+
+    <div class="subtitle">
+        <p>Please take a moment to provide us with some basic information so we can better serve you. </p>
+    </div>
+
+    <div class="basic-info">
+        <b>Basic Information</b>
+    </div>
+    
+    <form action="#" method="get" class="info-form">
+        <!--Name and Email-->
+        <div class="form-row">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!--Age input-->
+        <div class="form-row">
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" min="0" max="100">
+        </div>
+
+        <!--Dropdowns-->
+        <div class="dropdown-section">
+            <div id="cuisine-dropdown">
+                <button class="dropdown-toggle">
+                <span>Types of Cuisine</span>
+                <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#">Filipino</a></li>
+                    <li class="menu-item"><a href="#">Italian</a></li>
+                    <li class="menu-item"><a href="#">Japanese</a></li>
+                    <li class="menu-item"><a href="#">French</a></li>
+                    <li class="menu-item"><a href="#">Mexican</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="submenu-toggle">
+                        <span>Healthy Options</span>
+                        <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                        </ul>
+                    </li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Desserts</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">Tiramisu Layer Cake</a></li>
+                        <li class="submenu-item"><a href="#">White Chocolate Raspberry Cheesecake</a></li>
+                        <li class="submenu-item"><a href="#">Brownie Sundae</a></li>
+                        <li class="submenu-item"><a href="#">Chocolate Lava Cake</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+        
+            <div id="payment-dropdown">
+            <button class="dropdown-toggle">
+                <span>Mode of Payment</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Cash</a></li>
+                <li class="menu-item dropdown">
+                    <a href="#" class="submenu-toggle">
+                    <span>Card</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="#">BDO</a></li>
+                        <li class="submenu-item"><a href="#">ChinaBank</a></li>
+                        <li class="submenu-item"><a href="#">BPI</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="#">GCash</a></li>
+                <li class="menu-item"><a href="#">Maya</a></li>
+                <li class="menu-item"><a href="#">Paypal</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <!--Radio btn-->
+        <div class="service-form-row">
+            <legend>Food Service</legend>
+            <div>
+                <input type="radio" name="service" value="Dine-in" id="dine-in">
+                <label for="dine-in">Dine-in</label>
+            </div>
+
+            <div>
+                <input type="radio" name="service" value="Take-out" id="take-out">
+                <label for="take-out">Take-out</label>
+            </div>
+        </div>
+
+        <!--Textarea for instructions-->
+        <div class="form-row-instruction">
+            <label for="instruction">Comments/Instructions</label>
+            <textarea name="instruction" id="instruction" cols="25" rows="10" placeholder="Enter your instructions"></textarea>
+        </div>
+
+        <!--Buttons-->
+        <div class="btn-group">
+            <button class="order" type="submit">Place Order</button>
+            <button class="cancel" type="cancel">Cancel</button>
+        </div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

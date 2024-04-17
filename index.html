@@ -1,134 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Reservation</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ken's Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <header>
-        <!--Image here for LOGO-->
-        <img src="img/logo.png" alt="">
 
-        <h1>Ken's Restaurant Reservation</h1>
-    </header>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container nav-cstm">
+      <a class="navbar-brand d-flex" href="#">
+        <img src="/img/logo.png" alt="Logo" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="subtitle">
-        <p>Please take a moment to provide us with some basic information so we can better serve you. </p>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Gallery</a>
+            </li>
+          </ul>
+          <!--Cart Here-->
+          <a href="#">
+            <img src="img/cart.jpg" alt="cart" class="img-fluid" width="50px">
+          </a>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    <div class="basic-info">
-        <b>Basic Information</b>
+  <section class="p-5 text-center text-md-start bg-dark text-light ">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h5 class="text-warning">Welcome</h5>
+          <h1>Ken's Restaurant</h1>
+          <p class="my-3">
+            Experience Culinary Delights and
+            Indulge in Exquisite Flavors <br> and Impeccable Service at <span class="text-warning ">Ken's
+              Restaurant!</span>
+          </p>
+          <a href="reservation-page/index.html" class="btn btn-warning btn-lg text-light">Start Order</a>
+
+          <!--Links-->
+          <ul class="nav justify-content-center my-3">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#bestSellers">Best Sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#featuredProducts">Featured Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">All Products</a>
+            </li>
+          </ul>
+        </div>
+        <!--Image Here-->
+        <img src="img/showcase.jpg" alt="" class="img-fluid w-50 rounded-circle my-5 d-none d-sm-block ">
+      </div>
     </div>
-    
-    <form action="#" method="get" class="info-form">
-        <!--Name and Email-->
-        <div class="form-row">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        </div>
+  </section>
 
-        <div class="form-row">
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
-
-        <!--Age input-->
-        <div class="form-row">
-            <label for="age">Age: </label>
-            <input type="number" id="age" name="age" min="0" max="100">
-        </div>
-
-        <!--Dropdowns-->
-        <div class="dropdown-section">
-            <div id="cuisine-dropdown">
-                <button class="dropdown-toggle">
-                <span>Types of Cuisine</span>
-                <i class="fa-solid fa-caret-down"></i>
-                </button>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#">Filipino</a></li>
-                    <li class="menu-item"><a href="#">Italian</a></li>
-                    <li class="menu-item"><a href="#">Japanese</a></li>
-                    <li class="menu-item"><a href="#">French</a></li>
-                    <li class="menu-item"><a href="#">Mexican</a></li>
-                    <li class="menu-item dropdown">
-                        <a href="#" class="submenu-toggle">
-                        <span>Healthy Options</span>
-                        <i class="fa-solid fa-caret-right"></i>
-                        </a>
-                        <ul class="submenu">
-                            <li class="submenu-item"><a href="#">Vegetarian</a></li>
-                        </ul>
-                    </li>
-                <li class="menu-item dropdown">
-                    <a href="#" class="submenu-toggle">
-                    <span>Desserts</span>
-                    <i class="fa-solid fa-caret-right"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a href="#">Tiramisu Layer Cake</a></li>
-                        <li class="submenu-item"><a href="#">White Chocolate Raspberry Cheesecake</a></li>
-                        <li class="submenu-item"><a href="#">Brownie Sundae</a></li>
-                        <li class="submenu-item"><a href="#">Chocolate Lava Cake</a></li>
-                    </ul>
-                </li>
-                </ul>
+  <section id="bestSellers" class="p-5">
+    <div class="container mx-auto">
+      <div class="py-3">
+        <h2>Best Sellers</h2>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <div class="card text-bg-light mb-3 shadow border-0">
+            <img src="img/filipino/beefcamto.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Beef Camto</h5>
+              <p class="card-text  d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                tempore voluptas architecto soluta
+                officia ipsa dignissimos, facilis perferendis molestias nemo</p>
+              <a href="#" class="btn btn-success">Add to cart</a>
             </div>
-        
-            <div id="payment-dropdown">
-            <button class="dropdown-toggle">
-                <span>Mode of Payment</span>
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <ul class="menu">
-                <li class="menu-item"><a href="#">Cash</a></li>
-                <li class="menu-item dropdown">
-                    <a href="#" class="submenu-toggle">
-                    <span>Card</span>
-                    <i class="fa-solid fa-caret-right"></i>
-                    </a>
-                    <ul class="submenu">
-                        <li class="submenu-item"><a href="#">BDO</a></li>
-                        <li class="submenu-item"><a href="#">ChinaBank</a></li>
-                        <li class="submenu-item"><a href="#">BPI</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="#">GCash</a></li>
-                <li class="menu-item"><a href="#">Maya</a></li>
-                <li class="menu-item"><a href="#">Paypal</a></li>
-            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-light mb-3 shadow border-0">
+            <img src="img/filipino/karekare.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Kare-Kare</h5>
+              <p class="card-text  d-none d-md-block ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+                assumenda ab quidem earum blanditiis dolore odit quam ad dolorum.</p>
+              <a href="#" class="btn btn-success">Add to cart</a>
             </div>
+          </div>
         </div>
-        
-        <!--Radio btn-->
-        <div class="service-form-row">
-            <legend>Food Service</legend>
-            <div>
-                <input type="radio" name="service" value="Dine-in" id="dine-in">
-                <label for="dine-in">Dine-in</label>
+      </div>
+    </div>
+  </section>
+
+  <section id="featuredProducts" class="p-5 bg-dark ">
+    <div class="container">
+      <div class="py-3 text-light ">
+        <h2>Featured Products</h2>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/filipino/beefcamto.png" class="card-img-top" alt="...">
+            <div class="card-body d-none d-sm-block bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
-
-            <div>
-                <input type="radio" name="service" value="Take-out" id="take-out">
-                <label for="take-out">Take-out</label>
+            <a href="#" class="btn btn-success">Add to cart</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/filipino/karekare.png" class="card-img-top" alt="...">
+            <div class="card-body d-none d-sm-block bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
+            <a href="#" class="btn btn-success">Add to cart</a>
+          </div>
         </div>
-
-        <!--Textarea for instructions-->
-        <div class="form-row-instruction">
-            <label for="instruction">Comments/Instructions</label>
-            <textarea name="instruction" id="instruction" cols="25" rows="10" placeholder="Enter your instructions"></textarea>
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/filipino/pancit.png" class="card-img-top" alt="...">
+            <div class="card-body d-none d-sm-block bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+            <a href="#" class="btn btn-success">Add to cart</a>
+          </div>
         </div>
-
-        <!--Buttons-->
-        <div class="btn-group">
-            <button class="order" type="submit">Place Order</button>
-            <button class="cancel" type="cancel">Cancel</button>
+        <div class="col">
+          <div class="card border-0">
+            <img src="img/logo.png" class="card-img-top" alt="...">
+            <div class="card-body d-none d-sm-block bg-light">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+            <a href="#" class="btn btn-success">Add to cart</a>
+          </div>
         </div>
-    </form>
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="#" class="btn btn-success btn-lg text-light">View Menu</a>
+      </div>
+    </div>
+  </section>
 
-    <script src="index.js"></script>
+  <footer class="p-5">
+    <div class="container">
+      <h2>Ken's Restaurant</h2>
+      <hr>
+
+      <div class="row">
+        <div class="col">
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">About us</a></p>
+          <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Terms & Conditions</a></p>
+          <div class="">
+            <img src="img/socialmedia/fb-logo.png" alt="" class="img-fluid" width="50px">
+            <img src="img/socialmedia/Instagram_icon.png.png" alt="" class="img-fluid ms-4" width="50px">
+          </div>
+          <p id="copyright" class="mt-4"></p>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Send us your feedback!</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
