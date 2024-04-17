@@ -28,6 +28,7 @@ header {
 
 header img {
     width: 20%;
+    border-radius: 50%;
 }
 
 .subtitle {
