@@ -12,6 +12,42 @@
 
 <body>
     <!--V2-->
+    <!--Navigation bar here-->
+    <nav class="navbar bg-light ">
+        <div class="container">
+            <!--Logo and Name-->
+            <div>
+                <img src="../img/brand.jpg" alt="Logo" width="50" height="50" class="rounded-circle ">
+            </div>
+
+            <!--Offcanvas navbar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="../gallery-page/gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                    <!--Cart Here-->
+                    <a href="#">
+                        <img src="../img/cart.jpg" alt="cart" class="img-fluid" width="40px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <header class="p-4 bg-light ">
         <div class="container">
             <div class="d-flex justify-content-center align-items-center flex-column text-center">
@@ -61,47 +97,40 @@
                             <ul class="dropdown-menu">
                                 <li class="dropend">
                                     <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        href="#">Filipino</a>
+                                        href="#">Main</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item">Pancit</a></li>
-                                        <li><a href="#" class="dropdown-item">Beef Camto</a></li>
-                                        <li><a href="#" class="dropdown-item">Kare-kare</a></li>
+                                        <li><a href="#" class="dropdown-item">Bruschetta</a></li>
+                                        <li><a href="#" class="dropdown-item">Crostini</a></li>
+                                        <li><a href="#" class="dropdown-item">Pasta</a></li>
+                                        <li><a href="#" class="dropdown-item">Risotto</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropend">
                                     <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        href="#">Italian</a>
+                                        href="#">Juice</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
+                                        <li><a href="#" class="dropdown-item">Blueberry</a></li>
+                                        <li><a href="#" class="dropdown-item">Lemon</a></li>
+                                        <li><a href="#" class="dropdown-item">Grapefruit</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropend">
                                     <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        href="#">Japanese</a>
+                                        href="#">Coffee</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropend">
-                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        href="#">French</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
+                                        <li><a href="#" class="dropdown-item">Americano</a></li>
+                                        <li><a href="#" class="dropdown-item">Cappuccino</a></li>
+                                        <li><a href="#" class="dropdown-item">Espresso</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropend">
                                     <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
                                         href="#">Desserts</a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
-                                        <li><a href="#" class="dropdown-item">TBA</a></li>
+                                        <li><a href="#" class="dropdown-item">Jelly Cake</a></li>
+                                        <li><a href="#" class="dropdown-item">Pancake</a></li>
+                                        <li><a href="#" class="dropdown-item">Nutella Shake</a></li>
+                                        <li><a href="#" class="dropdown-item">Tiramisu</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -146,7 +175,7 @@
                     <div class="my-3">
                         <label for="instructions" class="form-label">Instructions</label>
                         <textarea class="form-control textarea-cstm" id="instructions"
-                            style="height: 10rem;"></textarea>
+                            style="height: 10rem; resize: none;"></textarea>
                     </div>
                     <div class="d-flex justify-content-end ">
                         <button type="button" class="btn btn-outline-success">Place Order</button>
