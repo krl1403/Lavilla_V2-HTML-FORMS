@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Americano",
+        "price": 60,
+        "description": "Bold and robust, our Americano will keep you energized.",
+        "image": "../img/drinks/coffee/americano.png"
+    },
+    {
+        "id": 2,
+        "name": "Cappuccino",
+        "price": 70,
+        "description": "Indulge in the creamy richness of our Cappuccino.",
+        "image": "../img/drinks/coffee/capuccino.png"
+    },
+    {
+        "id": 3,
+        "name": "Espresso",
+        "price": 60,
+        "description": "Start your day with a shot of our bold Espresso.",
+        "image": "../img/drinks/coffee/espresso.png"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Jellycake",
+        "price": 100,
+        "description": "Delight in the sweetness of our Jelly Cake.",
+        "image": "../img/desserts/jellycake.png"
+    },
+    {
+        "id": 2,
+        "name": "Pancake",
+        "price": 80,
+        "description": "Enjoy a fluffy Pancake for a delightful treat.",
+        "image": "../img/desserts/pancake.png"
+    },
+    {
+        "id": 3,
+        "name": "Tiramisu",
+        "price": 120,
+        "description": "Indulge in the rich flavors of our classic Tiramisu dessert.",
+        "image": "../img/desserts/tiramisu.png"
+    },
+    {
+        "id": 4,
+        "name": "Nutella",
+        "price": 150,
+        "description": "Satisfy your sweet tooth with our Nutella Shake.",
+        "image": "../img/desserts/nutella.png"
+    }
+]
