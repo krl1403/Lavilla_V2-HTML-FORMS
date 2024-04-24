@@ -94,7 +94,7 @@
             <button type="button" class="btn btn-primary position-relative ms-2" data-bs-toggle="modal"
                 data-bs-target="#modal">
                 Cart
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="quantity">
                     0
                 </span>
             </button>
@@ -109,8 +109,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h2 id="name"></h2>
-                    <h6 id="price"></h6>
+                    <ul class="listCard"></ul>
+                    <div class="checkout">
+                        <div class="total">0</div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

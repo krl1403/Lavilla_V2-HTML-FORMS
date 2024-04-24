@@ -1,0 +1,108 @@
+{
+    "main": [
+        {
+            "id": 1,
+            "name": "Bruschetta",
+            "price": 100,
+            "description": "Savor the flavors of Italy with our classic Bruschetta.",
+            "image": "../img/dish/bruschetta.png"
+        },
+        {
+            "id": 2,
+            "name": "Crostini",
+            "price": 100,
+            "description": "Enjoy the simplicity of our delicious Crostini.",
+            "image": "../img/dish/crostini.png"
+        },
+        {
+            "id": 3,
+            "name": "Pasta",
+            "price": 120,
+            "description": "Indulge in the comforting taste of our Pasta dishes.",
+            "image": "../img/dish/pasta.png"
+        },
+        {
+            "id": 4,
+            "name": "Risotto",
+            "price": 150,
+            "description": "Delight in the creamy goodness of our Risotto.",
+            "image": "../img/dish/risotto.png"
+        }
+    ],
+    "juice": [
+        {
+            "id": 1,
+            "name": "Lemon",
+            "price": 60,
+            "description": "Refreshing lemon juice to brighten your day.",
+            "image": "../img/drinks/juice/lemon.png"
+        },
+        {
+            "id": 2,
+            "name": "Blueberry",
+            "price": 70,
+            "description": "Delicious blueberry juice, bursting with flavor.",
+            "image": "../img/drinks/juice/blueberry.png"
+        },
+        {
+            "id": 3,
+            "name": "Grapefruit",
+            "price": 60,
+            "description": "Tangy grapefruit juice to awaken your senses.",
+            "image": "../img/drinks/juice/grapefruit.png"
+        }
+    ],
+    "coffee": [
+        {
+            "id": 1,
+            "name": "Americano",
+            "price": 60,
+            "description": "Bold and robust, our Americano will keep you energized.",
+            "image": "../img/drinks/coffee/americano.png"
+        },
+        {
+            "id": 2,
+            "name": "Cappuccino",
+            "price": 70,
+            "description": "Indulge in the creamy richness of our Cappuccino.",
+            "image": "../img/drinks/coffee/capuccino.png"
+        },
+        {
+            "id": 3,
+            "name": "Espresso",
+            "price": 60,
+            "description": "Start your day with a shot of our bold Espresso.",
+            "image": "../img/drinks/coffee/espresso.png"
+        }
+    ],
+    "desserts": [
+        {
+            "id": 1,
+            "name": "Jellycake",
+            "price": 100,
+            "description": "Delight in the sweetness of our Jelly Cake.",
+            "image": "../img/desserts/jellycake.png"
+        },
+        {
+            "id": 2,
+            "name": "Pancake",
+            "price": 80,
+            "description": "Enjoy a fluffy Pancake for a delightful treat.",
+            "image": "../img/desserts/pancake.png"
+        },
+        {
+            "id": 3,
+            "name": "Tiramisu",
+            "price": 120,
+            "description": "Indulge in the rich flavors of our classic Tiramisu dessert.",
+            "image": "../img/desserts/tiramisu.png"
+        },
+        {
+            "id": 4,
+            "name": "Nutella",
+            "price": 150,
+            "description": "Satisfy your sweet tooth with our Nutella Shake.",
+            "image": "../img/desserts/nutella.png"
+        }
+    ]
+}
