@@ -94,13 +94,13 @@
             <button type="button" class="btn btn-primary position-relative ms-2" data-bs-toggle="modal"
                 data-bs-target="#modal">
                 Cart
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="quantity">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger quantity">
                     0
                 </span>
             </button>
         </div>
     </section>
-
+    
     <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -111,16 +111,19 @@
                 <div class="modal-body">
                     <ul class="listCard"></ul>
                     <div class="checkout">
-                        <div class="total">0</div>
+                        <div class="total"></div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="../reservation-page/index.html" class="btn btn-primary">Checkout</a>
+                    <a href="../reservation-page/index.html" class="btn btn-success ">Checkout</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--Toast alert-->
+    <div class="toast-container fixed-top p-3 ms-auto "></div>
 
     <script src="gallery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
